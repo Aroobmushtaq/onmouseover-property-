@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onmouseover="over()" onmouseout="out()" onclick="hit()">click me</button>
+
+    <script>
+        function over(){
+
+            document.getElementById("btn").style.background="red"
+            document.getElementById("btn").style.width="100px"
+            document.getElementById("btn").style.border="2px solid black"
+
+        }
+        function out(){
+            document.getElementById("btn").style.background="black"
+            document.getElementById("btn").style.width="80px"
+            document.getElementById("btn").style.color="white"
+            
+        }
+        function hit(){
+            document.getElementById("btn").style.background="green"
+            
+
+        }
+    </script>
+</body>
+</html>
